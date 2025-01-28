@@ -16,5 +16,5 @@ def show_variable(key):
 def show_env_variables():
     for i, key in enumerate(os.environ.keys(), start=1):
         print(i, key)
-        show_variable.apply_async(key)
+        show_variable(key)
         print("wait for previous tasks")
